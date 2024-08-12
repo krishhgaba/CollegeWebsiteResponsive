@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel = "Stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <a href = "index.html"><img src ="images/logo.png"></a>
+            <div class = "nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href ="about.html">About Us</a></li>
+                    <li><a href ="course.html">Course</a></li>
+                    <li><a href ="blog.html">Blog</a></li>
+                    <li><a href ="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Certificates And Online Programs</h1>
+    </section>
+
+
+
+<!--    blog page content -->
+
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/blogPic.jpg">
+            <h2>Our Certificates and Online Programs</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit excepturi error aut eligendi alias provident nihil dicta iste culpa praesentium eos neque fugiat veritatis voluptate ex, quas repudiandae placeat!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id incidunt aspernatur, eum suscipit provident fugiat autem ducimus. Exercitationem, aliquam! Sed earum quaerat neque consectetur minus ipsum eos odio non.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis repellendus iste blanditiis a tenetur ea minus rerum nostrum? Consequuntur, corporis reprehenderit eveniet beatae sint voluptatum cupiditate rem ad laborum.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis veritatis mollitia, sint ea voluptatibus blanditiis ab provident quia, voluptatum ipsum reprehenderit molestias sunt, facere eos corporis excepturi sequi. Doloribus, ipsa?</p>
+
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="@email.com">
+                    <textarea rows ="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+        </div>
+        <div class ="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Bachelor of Medicine, Bachelor of Surgery - MBBS.</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>25</span>
+            </div>
+            <div>
+                <span>BBA + LLB</span>
+                <span>27</span>
+            </div>
+            <div>
+                <span>Masters in Psychology</span>
+                <span>31</span>
+            </div>
+            <div>
+                <span>Artificial Intelligence</span>
+                <span>43</span>
+            </div>
+            <div>
+                <span>Bachelors in Mathematics</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>PhD in Chemistry</span>
+                <span>12</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- ----Footer--- -->
+
+
+
+
+<section class="footer">
+    <h2>About Us</h2>   
+    <!-- <h4>About Us</h4> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio nostrum reprehenderit facilis voluptatem itaque deserunt quod cumque.<br> Atque rerum amet nesciunt repudiandae dolore cupiditate soluta fuga accusantium quisquam aperiam?</p>
+    <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <br>
+        <a href = "https://www.linkedin.com/in/jatin-singh-hada-9a2b17217/" class ="hero-btn red-btn">Linkedin</a>
+</div>
+<p>Made by Jatin Singh Hada</p>
+</section>
+
+
+
+
+
+
+<!-- Java script for Toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
